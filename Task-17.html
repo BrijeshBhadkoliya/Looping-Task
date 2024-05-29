@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- 13.Write javascript program print out Fibonacci series. (0,1,1,2,3,5,8…) -->
+
+    <script>
+        let num = Number(prompt("Enter Any Number :-"))
+        let n = 0;
+        let sum;
+        let t = 1;
+        document.write(`${n}, `);
+        document.write(`${t}, `);
+
+        for (let i = 0; i < num; i++) {
+
+            sum = n + t;
+            n = t;
+            t = sum;
+            document.write(`${t}, `);
+
+        }
+    </script>
+</body>
+
+</html>
